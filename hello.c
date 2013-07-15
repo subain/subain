@@ -10,11 +10,12 @@
 #include <linux/proc_fs.h>
 #include <linux/seq_file.h>
 #include <linux/stat.h>
+#include <linux/smp_lock.h>
 #include <linux/init.h>
 #include <linux/device.h>
 #include <linux/tty.h>
 #include <linux/kmod.h>
-#include <linux/smp_lock.h>
+
 
 static LIST_HEAD(misc_list);
 static DEFINE_MUTEX(misc_mtx);
